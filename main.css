@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Le header */
+.coordonnes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #004a7c;
+    height: 45px;
+}
+
+.toface, .insta{
+    color: #fff;
+}
+
+.insta{
+    padding-left: 10px;
+}
+
+.fa-whatsapp, .fa-phone, .fa-envelope, .fa-clock{
+    padding-right: 5px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.numeros{
+    display: flex;
+    width: 145vh;
+}
+
+.numeros p{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.sous-en-tete{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+nav{
+    width: 500px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin: 0 15px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav ul li:hover a{
+    color: rgb(246, 142, 19);
+}
+
+.premier-enfant-de-liste{
+    color: rgb(246, 142, 19);
+}
+
+.logo img{
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+/* Couleur de fond des services */
+.couleur-de-fond{
+    width: 100%;
+    height: 0.2em;
+    background-color: #004a7c;
+}
+
+
+/* les details sur les services */
+.ligne{
+    width: 70px;
+    height: 2px;
+    background-color:rgb(246, 142, 19);
+    margin: 10px 0;
+}
+
+.detail-sur-services{
+    display: flex;
+    justify-content: center;
+}
+
+.detail-sur-services .navigator, .section-service{
+    margin: 50px 20px;
+}
+
+.navigator{
+    background-color: rgb(0, 92, 168);
+    width: 400px;
+    height: 600px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.navigator h1{
+    color: #fff;
+}
+
+.navigator ul li{
+    list-style-type: none;
+    border-bottom: 1px solid white;
+}
+
+.navigator ul li a{
+    text-decoration: none;
+    line-height: 60px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navigator ul li a:hover{
+    color: rgb(246, 142, 19);
+    transition: .5s;
+}
+
+.section-service{
+    width: 110vh;
+    height: auto;
+    position: relative;
+}
+
+.slide-coaching img{
+    width: 110vh;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.defile-images img{
+    width: 110vh;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.slide-event.active{
+    opacity: 1;
+}
+
+.section-service-text{
+    margin-top: 55vh;
+}
+
+.section-service-text-coach{
+    margin-top: 30px;
+}
+.section-service-text-coach h1{
+    color: rgb(68, 68, 68);
+    font-size: 35px;
+}
+.btn-nous-contacter-coach{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 230px;
+    height: 50px;
+    background-color: rgb(246, 142, 19);
+    margin-top: 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-nous-contacter-coach:hover{
+    background-color: rgb(36, 53, 89);
+    transition: .6s;
+}
+
+.section-service-text h1{
+    color: rgb(68, 68, 68);
+    font-size: 35px;
+}
+
+.desc-event{
+    color: rgb(68, 68, 68);
+}
+
+.liste-event{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.liste-event li{
+   color: rgb(68, 68, 68);
+}
+
+.btn-nous-contacter{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 230px;
+    height: 50px;
+    background-color: rgb(246, 142, 19);
+    margin-top: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-nous-contacter:hover{
+    background-color: rgb(36, 53, 89);
+    transition: .6s;
+}
+
+.reveal{
+    opacity: 0;
+    transform: translatex(-100px);
+    transition: 1s;
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* Nous trouver */
+.form-titre{
+    text-align: center;
+}
+
+.form-contact{
+    display: flex;
+    justify-content: center;
+}
+
+.nous-trouver div{
+    width: 300px;
+    height: 150px;
+    margin: 50px 30px;
+   border: 1px solid rgb(183, 185, 186);
+}
+
+form{
+    background-color: rgb(0, 92, 168);
+    width: 550px;
+    height: 650px;
+    margin-top: 50px;
+}
+
+.formulaire{
+    color: #fff;
+    padding-top: 20px;
+    margin-left: 25px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.champ-nom, .champ-objet{
+    width: 500px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.champ-tel, .champ-mail{
+    width: 235px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.champ-message{
+    width: 500px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.champ-envoi{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 230px;
+    height: 50px;
+    background-color: rgb(246, 142, 19);
+    margin-top: 20px;
+    margin-left: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fa-house-chimney, .fa-envelope-circle-check, .fone{
+    background-color: rgb(246, 142, 19);
+    color: #fff;
+    padding: 14px;
+    transform: translate(20px,-25px);
+    font-size: 25px;
+}
+
+.form-adress, .form-ruel{
+    margin-left: 20px;
+    color: rgb(68, 68, 68);
+}
+
+.form-adress{
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-ruel{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.footer h1{
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer img{
+    width: 200px;
+    height: 100px;
+}
+
+.footer-logo p{
+    background-color: #fff;
+    transform: translateY(-20px);
+    color: rgb(246, 142, 19);
+    width: 200px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px;
+}
+
+.book, .gram{
+    color: rgb(144, 144, 144);
+    background-color: #fff;
+    padding: 15px;
+    margin: 0 2px;
+    border-radius: 3px;
+
+}
+
+.book:hover{
+    color: rgb(246, 142, 19);
+    transition: .5s;
+}
+
+.gram:hover{
+    color: rgb(246, 142, 19);
+    transition: .5s;
+}
+
+.contact p{
+    color: rgb(144, 144, 144);
+    font-size: 15px;
+}
+.contact section{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.contact p:hover{
+    color: rgb(246, 142, 19);
+    transition: .5s;
+}
+
+.timer{
+    color: rgb(144, 144, 144);  
+}
+.timer section{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.timer p:hover{
+    color: rgb(246, 142, 19);
+    transition: .5s;
+}
+
+.footer div{
+    margin: 50px 60px;
+}
+
+.fa-angle-right{
+    color: rgb(246, 142, 19);
+}
+
+.footer-navig ul{
+    padding-top: 20px;
+}
+
+.footer-navig ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer-navig ul li a{
+    text-decoration: none;
+    color: rgb(144, 144, 144);
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.footer-navig ul li a:hover{
+    color: rgb(246, 142, 19);
+    transition: .5s;
+}
+
+@media screen and (max-width: 980px){
+    .coordonnes{
+        flex-direction: column;
+        height: 60px;
+        padding: 5px;
+    }
+    .numeros{
+        justify-content: center;
+    }
+    .defile-images img{
+        width: 100%;
+    }
+    .slide-coaching img{
+        width: 100%;
+    }
+    .footer div{
+        margin: 50px 40px;
+    }  
+}
+
+
+@media screen and (max-width: 815px){
+    .numeros{
+        width: 120vh;
+    }
+    .numeros p{
+        font-size: 12px;
+    }
+    .footer div{
+        margin: 50px 20px;
+    }
+    .form-contact{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 715px){
+    .numeros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .coordonnes{
+        height: 100px;
+    }
+    .footer div{
+        margin: 50px 20px;
+    } 
+    .footer{
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .numeros{
+        width: 100vh;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .detail-sur-services{
+        flex-direction: column-reverse;
+    }
+    .section-service-text{
+        font-size: 14px;
+    }
+    .section-service-text h1{
+        font-size: 23px;
+    }
+    .navigator{
+        font-size: 10px;
+    }
+    .btn-nous-contacter{
+        height: 35px;
+        font-size: 12px;
+    }
+    .numeros{
+        width: 50vh;
+    }
+    .section-service-text-coach{
+        font-size: 14px;
+    }
+    .section-service-text-coach h1{
+        font-size: 23px;
+    }
+    .section-service{
+        width: 70vh;
+    }
+}
+

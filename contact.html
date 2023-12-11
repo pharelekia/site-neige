@@ -1,0 +1,121 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenair">
+        <header class="en-tete">
+            <div class="coordonnes">
+        
+                <div>
+                    <a href="#"><i class="fa-brands fa-facebook-f toface"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram insta"></i></a>
+                </div>
+        
+                <div class="numeros">
+                    <p><i class="fa-brands fa-whatsapp"></i>+242 05 696 96 69</p>
+                    <p><i class="fa-solid fa-phone"></i>+242 06 922 32 96</p>
+                    <p><i class="fa-solid fa-envelope"></i>win20@gmail.com</p>
+                    <p><i class="fa-regular fa-clock"></i>Lundi - Vendredi: 8h - 16h</p>
+                </div>
+            </div>
+            <div class="sous-en-tete">
+                 <nav>
+                    <ul>
+                        <li><a href="index.html" class="premier-enfant-de-liste">Accueil</a></li>
+                        <li><a href="index.html#mon_ancre">A propos</a></li>
+                        <li><a href="index.html#ancre">Nos services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="couleur-de-fond"></div>
+
+        <div class="form-contact">
+            <div class="nous-trouver">
+                <div>
+                    <p class="house"><i class="fa-solid fa-house-chimney"></i></p>
+                    <h1 class="form-adress">Addresse</h1>
+                    <p class="form-ruel">94 rue moundzombo rond-point moungali</p>
+                </div>
+                
+                <div>
+                    <p><i class="fa-solid fa-envelope-circle-check"></i></p>
+                    <h1 class="form-adress">Email</h1>
+                    <p class="form-ruel">bsnows.win20@gmail.com</p>
+                </div>
+
+                <div>
+                    <p><i class="fa-sharp fa-solid fa-phone fone"></i></p>
+                    <h1 class="form-adress">Phone</h1>
+                    <p class="form-ruel">+242 05 696 96 69</p>
+                    <p class="form-ruel">+242 06 922 32 96</p>
+                </div>
+            </div>
+
+            <form action="traitement.php" method="post">
+                <p class="formulaire">Envoyer un message</p>
+    
+                <p><input type="text" name="pseudo" placeholder="Votre nom" class="champ-nom"></p>
+                <p>
+                    <input type="tel" placeholder="Votre numéro" class="champ-tel">
+                    <input type="email" placeholder="Votre E-mail" class="champ-mail">
+                </p>
+                <p><input type="text" placeholder="Votre Objet" class="champ-objet"></p>
+    
+                <textarea name="requete" placeholder="Votre message" class="champ-message"></textarea>
+    
+                <p><input type="submit" value="Envoyer" class="champ-envoi"></p>
+            </form>
+        </div>
+
+        <div class="footer">
+
+            <div class="footer-logo">
+                <p>un service au delà de vos attentes!</p>
+                <section class="f-insta">
+                    <a href="#"><i class="fa-brands fa-facebook-f book"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram gram"></i></a>
+                </section>
+            </div>
+        
+            <div class="footer-navig">
+            <h1>Navigation</h1>
+            <ul>
+                <li><i class="fa-solid fa-angle-right"></i><a href="index.html">Accueil</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="index.html#mon_ancre">A propos</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="index.html#ancre">Nos services</a></li>
+                <li><i class="fa-solid fa-angle-right"></i><a href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+        
+            <div class="contact">
+                <h1>Contact</h1>
+                <section>
+                    <p><i class="fa-solid fa-angle-right"></i>+242 06 922 32 96</p>
+                    <p><i class="fa-solid fa-angle-right"></i>+242 05 696 96 69</p>
+                </section>
+            </div>
+        
+            <div class="timer">
+                <h1>Horaire</h1>
+                <section>
+                    <p><i class="fa-solid fa-angle-right"></i>Lundi - Vendredi: 8h - 16h</p>
+                    <p><i class="fa-solid fa-angle-right"></i>Samedi: 9h - 14h</p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src ="script.js"></script>
+</body>
+</html>
